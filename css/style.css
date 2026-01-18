@@ -122,3 +122,13 @@ nav .nav__item a{
 .podcast__content{
      border-bottom: 1px solid rgba(65, 37, 103, 1);
 }
+
+
+
+
+#why__us{
+    background-color: rgba(35, 14, 61, 1);
+}
+.why__us__card{
+    background-color: rgba(53, 17, 101, 0.4);
+}
