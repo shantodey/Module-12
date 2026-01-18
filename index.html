@@ -6,6 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>TechWave</title>
 </head>
 <body>
@@ -28,15 +29,15 @@
         <!-- hero section -->
         <section id="hero">
             <div class="container mx-auto px-4">
-                <div class="hero__container mx-auto grid place-items-center">
+                <div class="hero__container lg:py-[110px] py-10 mx-auto grid place-items-center">
                     <div class="hero__img__container relative">
                         <img class="hero__ing_1" src="assets/hero-circle.png" alt="big circle">
-                        <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="assets/microphone.png" alt="microphone">
+                        <img class=" hero__ing_2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="assets/microphone.png" alt="microphone">
                         <div class="hero__img__overlay absolute top-7 right-0 transform -translate-x-1/2 -translate-y-1/2"><button class="uppercase">New</button></div>
                     </div>
                     <h1 class="hero__titel font-extrabold text-4xl sm:text-6xl mt-10 text-center px-4">TechWave</h1>
-                    <p class="light__wate font-normal text-sm sm:text-base text-center px-4">Your daily dose of tech insights, productivity hacks, and personal growth</p>
-                    <div class="hero__button__groups flex flex-col sm:flex-row gap-3 sm:gap-1.5 w-full sm:w-auto px-4 sm:px-0">
+                    <p class="light__wate font-normal text-sm lx:text-base lg:text-base text-center py-6 text-[20px]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    <div class="hero__button__groups flex  gap-3  w-full justify-center px-4 ">
                         <button class="nav__button text-sm sm:text-base"><img src="assets/spotify.png" alt="spotify">Listen on Spotify</button>
                         <button class="hero__button text-sm sm:text-base"><img src="assets/message.png" alt="message">Subscribe</button>
                     </div>
@@ -51,15 +52,15 @@
         <section id="podcast" >
             <div class="container mx-auto">
                 <center>
-                    <h1 class="pt-12 font-extrabold text-5xl capitalize">About the Podcast</h1>
+                    <h1 class="pt-12 font-extrabold lg:text-5xl text-[32px] capitalize">About the Podcast</h1>
                     <div class="podcast__content mt-4 pb-20">
-                        <p class=" light__wate font-normal text-base">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.</p>
+                        <p class=" light__wate font-normal lg:text-base text-[12px]">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.</p>
                         <p class="light__wate font-normal text-base">We break down complex topics into digestible insights, explore productivity strategies that actually work,<p>
                         <p class=" light__wate font-normal text-base">and share stories of personal growth from industry leaders.</p>
                         <p class="light__wate font-normal text-base mt-7 ">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
                     </div>
                 </center>
-                <div class="prodcast__cards pt-20 grid lg:grid-cols-4 sm:grid-cols-2 gap-20 pb-28">
+                <div class="prodcast__cards pt-20 grid lg:grid-cols-4 grid-cols-2 gap-20 pb-28">
                     <div class="prodcast__card text-center">
                         <h1 class="bright font-black text-5xl">150K+</h1>
                         <p class="light__wate uppercase font-normal text-base mt-4">Monthly Listeners</p>
@@ -81,49 +82,38 @@
         </section>
 
 
-        <section id="why__us" class="bg-[rgba(35,14,61,1)]">
-            <div class="container mx-auto">
-                <h1 class="pt-32 text-center font-bold text-5xl pb-10">Why Choose TechWave</h1>
-                <div class="why__us__container grid  lg:grid-cols-7 lg:grid-rows-3 gap-8 p-4">
-                    <div class="why__us__card bg-[rgba(53,17,101,0.4)] rounded-4xl lg:col-span-3 lg:row-span-2">
-                        <div class="card__content py-12 lg:py-28 px-6 justify-items-start text-left">
-                        <img src="assets/headphone.png" alt="headphone">
-                        <h3 class="text-2xl font-bold py-4">Premium Audio Quality</h3>
-                        <p class="light__wate font-normal text-base line-clamp-4">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
-                        </div>
+        <section id="why__us" class="bg-[rgba(35,14,61,1)] py-20 lg:py-32">
+            <div class="container mx-auto px-4">
+                <h1 class="text-center font-bold text-4xl sm:text-5xl pb-12 lg:pb-16">Why Choose TechWave</h1>
+                <div class="why__us__container grid lg:grid-cols-7 lg:grid-rows-3 gap-6 lg:gap-8">
+                    <div class="why__us__card bg-[rgba(53,17,101,0.4)] rounded-3xl lg:col-span-2 lg:row-span-2 p-8 lg:p-10 flex flex-col justify-center">
+                        <img src="assets/headphone.png" alt="headphone" class="w-12 h-12 mb-6">
+                        <h3 class="text-2xl font-bold mb-4">Premium Audio Quality</h3>
+                        <p class="light__wate font-normal text-base leading-relaxed  line-clamp-6">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
                     </div>
 
-                    
-                    <div class="why__us__card bg-[rgba(53,17,101,0.4)] rounded-4xl lg:col-span-4">
-                        <div class="card__content py-12 lg:py-16 px-6 justify-items-start text-left">
-                            <img src="assets/device.png" alt="mobile device" >
-                            <h3 class="text-2xl font-bold py-4">Mobile Friendly</h3>
-                            <p class="light__wate font-normal text-base">Listen on the go with seamless mobile experience and offline downloads.</p>
-                        </div>
+                    <div class="why__us__card bg-[rgba(53,17,101,0.4)] rounded-3xl lg:col-span-5 p-8 lg:p-10">
+                        <img src="assets/device.png" alt="mobile device" class="w-12 h-12 mb-6">
+                        <h3 class="text-2xl font-bold mb-4">Mobile Friendly</h3>
+                        <p class="light__wate font-normal text-base leading-relaxed">Listen on the go with seamless mobile experience and offline downloads.</p>
                     </div>
 
-                    <div class="why__us__card bg-[rgba(53,17,101,0.4)] rounded-4xl lg:col-span-4">
-                        <div class="card__content py-12 lg:py-16 px-6 justify-items-start text-left">
-                        <img src="assets/location.png" alt="location" >
-                        <h3 class="text-2xl font-bold py-4">Global Community</h3>
-                        <p class="light__wate font-normal text-base">Connect with tech enthusiasts from over 120 countries worldwide.</p>
-                        </div>
+                    <div class="why__us__card bg-[rgba(53,17,101,0.4)] rounded-3xl lg:col-span-5 p-8 lg:p-10">
+                        <img src="assets/location.png" alt="location" class="w-12 h-12 mb-6">
+                        <h3 class="text-2xl font-bold mb-4">Global Community</h3>
+                        <p class="light__wate font-normal text-base leading-relaxed">Connect with tech enthusiasts from over 120 countries worldwide.</p>
                     </div>
                     
-                    <div class="why__us__card bg-[rgba(53,17,101,0.4)] rounded-4xl lg:col-span-5 text-left">
-                        <div class="card__content py-12 lg:py-16 px-6 justify-items-start text-left">
-                        <img src="assets/headphone.png" alt="headphone" >
-                        <h3 class="text-2xl font-bold py-4 ">Exclusive Interviews</h3>
-                        <p class="light__wate font-normal text-base ">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
-                        </div>
+                    <div class="why__us__card bg-[rgba(53,17,101,0.4)] rounded-3xl lg:col-span-5 p-8 lg:p-10">
+                        <img src="assets/headphone.png" alt="headphone" class="w-12 h-12 mb-6">
+                        <h3 class="text-2xl font-bold mb-4">Exclusive Interviews</h3>
+                        <p class="light__wate font-normal text-base leading-relaxed">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
                     </div>
 
-                    <div class="why__us__card bg-[rgba(53,17,101,0.4)] rounded-4xl lg:col-span-2 ">
-                        <div class="card__content py-12 lg:py-16 px-6 grid justify-items-start text-left">
-                            <img src="assets/resource.png" alt="open book" >
-                            <h3 class="text-2xl font-bold py-4 ">Rich Resources</h3>
-                            <p class="light__wate font-normal text-base">Access show notes, transcripts, and additional learning materials for every episode.</p>
-                        </div>
+                    <div class="why__us__card bg-[rgba(53,17,101,0.4)] rounded-3xl lg:col-span-2 p-8 lg:p-10">
+                        <img src="assets/resource.png" alt="open book" class="w-12 h-12 mb-6">
+                        <h3 class="text-2xl font-bold mb-4">Rich Resources</h3>
+                        <p class="light__wate font-normal text-base leading-relaxed">Access show notes, transcripts, and additional learning materials for every episode.</p>
                     </div>
                 </div>
             </div>
@@ -192,14 +182,14 @@
             <div class="container mx-auto">
                 <h1 class="pt-32 text-center font-bold text-5xl pb-10">Meet the Host</h1>
                 <div class="host bg-[rgba(37,13,68,1)] rounded-4xl">
-                    <div class="host__content p-6 lg:flex lg:justify-between gap-6">
+                    <div class="host__content p-6 lg:flex  flex flex-col lg:justify-between justify-center gap-6">
                         <div class="host__img w-[200px] h-[200px] rounded-2xl overflow-hidden flex-shrink-0">
                             <img src="assets/host.png" alt="host img" class="w-full h-full object-cover">
                         </div>
                         <div class="about__host">
                             <h2 class="text-[32px] font-bold pb-4">Alex Kumar</h2>
                             <p class="text-base light__wate font-normal pb-4">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
-                            <div class="host__social__midea flex lg:justify-start sm:justify-center gap-x-2">
+                            <div class="host__social__midea flex lg:justify-start  gap-x-2">
                                 <div class="socila__icon">
                                     <img src="assets/linkedin.png" alt="">
                                 </div>
@@ -222,45 +212,30 @@
 
     </main>
 
-
-    <footer>
-        <div class="container mx-auto">
-            <h2 id="logo" class="text-4xl sm:text-6xl font-bold pt-32 text-center">Tech<span class="nav__logo text-4xl sm:text-6xl font-bold">Wave</span></h2>
-            <div class="footer__section flex lg:justify-center py-8 lg:gap-x-10">
-                <div class="footer__icon flex gap-2">
-                    <div>
-                        <img src="assets/spotify.png" alt="spotify">
-                    </div>
-                    <div>
-                        <p class="text-base light__wate font-normal">Spotify</p>
-                    </div>
+    <footer class="footer__wave">
+        <div class="container mx-auto px-4">
+            <h2 id="logo" class="text-4xl sm:text-6xl font-bold pt-[120px] pb-8 text-center">Tech<span class="nav__logo text-4xl sm:text-6xl font-bold">Wave</span></h2>
+            
+            <div class="footer__section flex flex-wrap justify-center items-center py-8 gap-4 sm:gap-6 lg:gap-8">
+                <div class="footer__icon flex items-center gap-2">
+                    <img src="assets/spotify.png" alt="spotify" class="w-6 h-6">
+                    <p class="text-base light__wate font-normal">Spotify</p>
                 </div>
-                <div class="footer__icon flex gap-2">
-                    <div>
-                        <img src="assets/apple-podcast.png" alt="apple-podcast">
-                    </div>
-                    <div>
-                        <p class="text-base light__wate font-normal">Apple Podcasts</p>
-                    </div>
+                <div class="footer__icon flex items-center gap-2">
+                    <img src="assets/apple-podcast.png" alt="apple-podcast" class="w-6 h-6">
+                    <p class="text-base light__wate font-normal">Apple Podcasts</p>
                 </div>
-                <div class="footer__icon flex gap-2">
-                    <div>
-                        <img src="assets/youtube-podcast.png" alt="youtube-podcast">
-                    </div>
-                    <div>
-                        <p class="text-base light__wate font-normal">YouTube</p>
-                    </div>
+                <div class="footer__icon flex items-center gap-2">
+                    <img src="assets/youtube-podcast.png" alt="youtube-podcast" class="w-6 h-6">
+                    <p class="text-base light__wate font-normal">YouTube</p>
                 </div>
-                <div class="footer__icon flex gap-2">
-                    <div>
-                        <img src="assets/twitter.png" alt="twitter">
-                    </div>
-                    <div>
-                        <p class="text-base light__wate font-normal">Twitter</p>
-                    </div>
+                <div class="footer__icon flex items-center gap-2">
+                    <img src="assets/twitter.png" alt="twitter" class="w-6 h-6">
+                    <p class="text-base light__wate font-normal">Twitter</p>
                 </div>
             </div>
-            <div class="text-center ">
+            
+            <div class="text-center pb-8">
                 <small class="text-base light__wate font-normal">&copy; 2026 TechWave Podcast. All rights reserved.</small>
             </div>
         </div>

@@ -1,0 +1,20 @@
+@media screen and (max-width:576px) {
+    .hero__img__container{
+        height: 200px;
+        width: 200px;
+    }
+    .hero__ing_2{
+        height: 80px;
+        width: auto;
+    }
+    .hero__img__overlay{
+        top: 20px;
+        right: -25px;
+    }
+    .host__content {
+        text-align: center;
+    }
+    .host__social__midea {
+        justify-content: center;
+    }
+}

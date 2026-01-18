@@ -23,6 +23,7 @@ body{
 .bright{
     color: rgb(0, 255, 136);
 }
+
 /* herder section styling */
 header{
     background-color: rgba(26, 11, 46, 1);
@@ -76,11 +77,11 @@ nav .nav__item a{
 
 #hero{
     background: url(../assets/hero-bg.png)  no-repeat center / cover;
-    height: 760px;
+
 }
 .hero__container{
     max-width: 550px;
-    padding: 101px 0;
+    /* padding: 101px 0; */
 }
 .hero__img__container{
     height: 350px;
@@ -110,22 +111,6 @@ nav .nav__item a{
     background: transparent;
 }
 
-
-@media (max-width: 768px) {
-    .hero__img__container {
-        height: 250px;
-        width: 250px;
-    }
-    
-    #hero {
-        height: auto;
-        min-height: 600px;
-    }
-    
-    .hero__container {
-        padding: 60px 0;
-    }
-}
 
 
 
@@ -214,4 +199,5 @@ nav .nav__item a{
 
 footer{
     background: url(../assets/footer-bg.png)  no-repeat center / cover;
+    min-height: 100px;
 }
