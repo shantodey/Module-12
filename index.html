@@ -11,43 +11,40 @@
 <body>
     <header>
         <nav>
-            <div class="container mx-auto">
-                <ul class="flex justify-between a">
-                    <li><a href=""><h2 id="logo" class="text-6xl font-bold">Tech<span class="nav__logo text-6xl font-bold">Wave</span></h2></a></li>
-                    <li>
+            <div class="container mx-auto px-4">
+                <ul class="flex justify-between items-center flex-wrap md:flex-nowrap gap-4">
+                    <li><a href=""><h2 id="logo" class="text-4xl sm:text-6xl font-bold">Tech<span class="nav__logo text-4xl sm:text-6xl font-bold">Wave</span></h2></a></li>
+                    <li class="hidden md:block">
                         <ul class="nav__item">
                             <li><a href="#why__us">About</a></li>
                             <li><a href="#featured__episodes">Episodes</a></li>
                             <li><a href="">Host</a></li>
                         </ul>
                     </li>
-                    <li><a href=""><button class="nav__button">Subscribe <i class="fa-solid fa-arrow-right-long"></i></button></a></li>
+                    <li><a href=""><button class="nav__button text-sm sm:text-base px-3 sm:px-4">Subscribe <i class="fa-solid fa-arrow-right-long"></i></button></a></li>
                 </ul>
             </div>
         </nav>
-
-
         <!-- hero section -->
-            <section id="hero">
-                <div class="container mx-auto">
-                    <div class="hero__container mx-auto grid place-items-center">
-                        <div class="hero__img__container relative ">
-                            <img class="hero__ing_1" src="assets/hero-circle.png" alt="big circle">
-                            <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="assets/microphone.png" alt="microphone">
-                            <div class="hero__img__overlay absolute top-7 right-0 transform -translate-x-1/2 -translate-y-1/2"><button class="uppercase">New</button></div>
-                        </div>
-                        <h1 class="hero__titel font-extrabold text-6xl mt-10">TechWave</h1>
-                        <p class="light__wate font-normal text-base ">Your daily dose of tech insights, productivity hacks, and personal growth</p>
-                        <div class="hero__button__groups flex gap-1.5">
-                            <button class="nav__button"><img src="assets/spotify.png" alt="spotify">Listen on Spotify</button>
-                            <button class="hero__button"><img src="assets/message.png" alt="message">Subscribe</button>
-                        </div>
+        <section id="hero">
+            <div class="container mx-auto px-4">
+                <div class="hero__container mx-auto grid place-items-center">
+                    <div class="hero__img__container relative">
+                        <img class="hero__ing_1" src="assets/hero-circle.png" alt="big circle">
+                        <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="assets/microphone.png" alt="microphone">
+                        <div class="hero__img__overlay absolute top-7 right-0 transform -translate-x-1/2 -translate-y-1/2"><button class="uppercase">New</button></div>
+                    </div>
+                    <h1 class="hero__titel font-extrabold text-4xl sm:text-6xl mt-10 text-center px-4">TechWave</h1>
+                    <p class="light__wate font-normal text-sm sm:text-base text-center px-4">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    <div class="hero__button__groups flex flex-col sm:flex-row gap-3 sm:gap-1.5 w-full sm:w-auto px-4 sm:px-0">
+                        <button class="nav__button text-sm sm:text-base"><img src="assets/spotify.png" alt="spotify">Listen on Spotify</button>
+                        <button class="hero__button text-sm sm:text-base"><img src="assets/message.png" alt="message">Subscribe</button>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
         <!-- hero section end-->
     </header>
-
 
     <main>
 
@@ -62,7 +59,7 @@
                         <p class="light__wate font-normal text-base mt-7 ">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
                     </div>
                 </center>
-                <div class="prodcast__cards pt-20 grid grid-cols-4 gap-20 pb-28">
+                <div class="prodcast__cards pt-20 grid lg:grid-cols-4 sm:grid-cols-2 gap-20 pb-28">
                     <div class="prodcast__card text-center">
                         <h1 class="bright font-black text-5xl">150K+</h1>
                         <p class="light__wate uppercase font-normal text-base mt-4">Monthly Listeners</p>
@@ -137,20 +134,19 @@
             <div class="container mx-auto">
                 <h1 class="pt-32 text-center font-bold text-5xl pb-10">Featured Episodes</h1>
                 <div class="featured__episodes__cards grid lg:grid-cols-3 lg:gap-8 sm:grid-cols-1">
-                    <div class="featured__episodes__card rounded-3xl">
+                    <div class="featured__episodes__card">
                         <div class="featured__episodes__img">
-                            <img src="" alt=" Two people talking">
-                            
+                            <iframe src="https://youtu.be/4IOJW5-n0_8?si=-AR6RNQXPuLGxyeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <div class="featured__episodes__overlay">
-                               <iframe src="" frameborder="0" > 
-                                    <i class="fa-solid fa-play"></i>
-                                </iframe>
+                                <i class="fa-solid fa-play"></i>
                             </div>
                         </div>
-                        <div class="featured__episodes__content bg-[rgba(37,13,68,1)] p-6">
-                            <h4 class="font-bold text-2xl ">The Future of AI in Everyday Life</h4>
-                            <p class="font-normal light__wate text-base text-24px">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
-                            <p class="flex gap-0.5 font-normal bright text-base"><img src="assets/clock.png" alt="clock">42 min</p>
+                        <div class="featured__episodes__content p-6">
+                            <h4 class="font-bold text-2xl pb-3">The Future of AI in Everyday Life</h4>
+                            <p class="font-normal light__wate text-base">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                            <p class="flex items-center gap-1.5 font-normal bright text-base pt-3">
+                                <img src="assets/clock.png" alt="clock">42 min
+                            </p>
                         </div>
                     </div>
                     <div class="featured__episodes__card rounded-3xl">
@@ -164,9 +160,9 @@
                             </div>
                         </div>
                         <div class="featured__episodes__content bg-[rgba(37,13,68,1)] p-6">
-                            <h4 class="font-bold text-2xl ">Building Better Habits for Remote Work</h4>
+                            <h4 class="font-bold text-2xl pt-6 pb-3">Building Better Habits for Remote Work</h4>
                             <p class="font-normal light__wate text-base text-24px">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
-                            <p class="flex gap-0.5 font-normal bright text-base"><img src="assets/clock.png" alt="clock">35 min</p>
+                            <p class="flex gap-0.5 font-normal bright text-base pt-3"><img src="assets/clock.png" alt="clock">35 min</p>
                         </div>
                     </div>
                     <div class="featured__episodes__card rounded-3xl">
@@ -180,9 +176,9 @@
                             </div>
                         </div>
                         <div class="featured__episodes__content bg-[rgba(37,13,68,1)] p-6">
-                            <h4 class="font-bold text-2xl ">Career Growth in Tech: A Roadmap</h4>
+                            <h4 class="font-bold text-2xl pt-6 pb-3">Career Growth in Tech: A Roadmap</h4>
                             <p class="font-normal light__wate text-base text-24px">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
-                            <p class="flex gap-0.5 font-normal bright text-base"><img src="assets/clock.png" alt="clock">51 min</p>
+                            <p class="flex gap-0.5 font-normal bright text-base pt-3"><img src="assets/clock.png" alt="clock">51 min</p>
                         </div>
                     </div>
                 </div>  
@@ -191,6 +187,37 @@
             
         </section>
 
+
+        <section id="host" class="bg-[rgba(26,11,46,1)] lg:pt-[120px]">
+            <div class="container mx-auto">
+                <h1 class="pt-32 text-center font-bold text-5xl pb-10">Meet the Host</h1>
+                <div class="host bg-[rgba(37,13,68,1)] rounded-4xl">
+                    <div class="host__content p-6 lg:flex lg:justify-between gap-6">
+                        <div class="host__img w-[200px] h-[200px] rounded-2xl overflow-hidden flex-shrink-0">
+                            <img src="assets/host.png" alt="host img" class="w-full h-full object-cover">
+                        </div>
+                        <div class="about__host">
+                            <h2 class="text-[32px] font-bold pb-4">Alex Kumar</h2>
+                            <p class="text-base light__wate font-normal pb-4">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                            <div class="host__social__midea flex lg:justify-start sm:justify-center gap-x-2">
+                                <div class="socila__icon">
+                                    <img src="assets/linkedin.png" alt="">
+                                </div>
+                                <div class="socila__icon">
+                                    <img src="assets/x.png" alt="">
+                                </div>
+                                <div class="socila__icon">
+                                    <img src="assets/instagram.png" alt="">
+                                </div>
+                                <div class="socila__icon">
+                                    <img src="assets/youtube.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>
