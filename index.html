@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>TechWave</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href=""><h2 id="logo">Tech<span class="nav__logo">Wave</span></h2></a></li>
+                    <li>
+                        <ul class="nav__item">
+                            <li><a href="">About</a></li>
+                            <li><a href="">Episodes</a></li>
+                            <li><a href="">Host</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><button class="nav__button">Subscribe <i class="fa-solid fa-arrow-right-long"></i></button></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!-- hero section -->
+            <section id="hero">
+                <div class="container">
+                    <div class="hero__container grid justify-center">
+                        <div class="hero__img__container relative ">
+                            <img class="hero__ing_1" src="assets/hero-circle.png" alt="big circle">
+                            <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="assets/microphone.png" alt="microphone">
+                            <div class="hero__img__overlay absolute top-7 right-0 transform -translate-x-1/2 -translate-y-1/2"><button class="uppercase">New</button></div>
+                        </div>
+                        <h1 class="hero__titel font-extrabold text-6xl mt-10">TechWave</h1>
+                        <p class="hero__paragraph font-normal text-base ">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                        <div class="hero__button__groups flex gap-1.5">
+                            <button class="nav__button"><img src="assets/spotify.png" alt="spotify">Listen on Spotify</button>
+                            <button class="hero__button"><img src="assets/message.png" alt="message">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- hero section end-->
+    </header>
 </body>
 </html>
