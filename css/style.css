@@ -211,3 +211,7 @@ nav .nav__item a{
     width: 20px;
     height: 20px;
 }
+
+footer{
+    background: url(../assets/footer-bg.png)  no-repeat center / cover;
+}
