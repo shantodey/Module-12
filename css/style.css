@@ -11,7 +11,7 @@ img {
     vertical-align: middle;
 }
 body{
-    background-color: #FBFBFB;
+    scroll-behavior: smooth;
 }
 
 
@@ -120,15 +120,22 @@ nav .nav__item a{
     background-color: rgba(26, 11, 46, 1);
 }
 .podcast__content{
-     border-bottom: 1px solid rgba(65, 37, 103, 1);
+     border-bottom: 1px solid #412567;
 }
 
 
 
 
-#why__us{
-    background-color: rgba(35, 14, 61, 1);
-}
-.why__us__card{
-    background-color: rgba(53, 17, 101, 0.4);
+
+.featured__episodes__overlay{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
 }
