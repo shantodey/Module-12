@@ -11,9 +11,9 @@
 <body>
     <header>
         <nav>
-            <div class="container">
-                <ul>
-                    <li><a href=""><h2 id="logo">Tech<span class="nav__logo">Wave</span></h2></a></li>
+            <div class="container mx-auto">
+                <ul class="flex justify-between a">
+                    <li><a href=""><h2 id="logo" class="text-6xl font-bold">Tech<span class="nav__logo text-6xl font-bold">Wave</span></h2></a></li>
                     <li>
                         <ul class="nav__item">
                             <li><a href="">About</a></li>
@@ -29,15 +29,15 @@
 
         <!-- hero section -->
             <section id="hero">
-                <div class="container">
-                    <div class="hero__container grid justify-center">
+                <div class="container mx-auto">
+                    <div class="hero__container mx-auto grid place-items-center">
                         <div class="hero__img__container relative ">
                             <img class="hero__ing_1" src="assets/hero-circle.png" alt="big circle">
                             <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="assets/microphone.png" alt="microphone">
                             <div class="hero__img__overlay absolute top-7 right-0 transform -translate-x-1/2 -translate-y-1/2"><button class="uppercase">New</button></div>
                         </div>
                         <h1 class="hero__titel font-extrabold text-6xl mt-10">TechWave</h1>
-                        <p class="hero__paragraph font-normal text-base ">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                        <p class="light__wate font-normal text-base ">Your daily dose of tech insights, productivity hacks, and personal growth</p>
                         <div class="hero__button__groups flex gap-1.5">
                             <button class="nav__button"><img src="assets/spotify.png" alt="spotify">Listen on Spotify</button>
                             <button class="hero__button"><img src="assets/message.png" alt="message">Subscribe</button>
@@ -47,5 +47,41 @@
             </section>
         <!-- hero section end-->
     </header>
+
+
+    <main>
+
+        <section id="podcast">
+            <div class="container mx-auto">
+                <center>
+                    <h1 class="pt-12 font-extrabold text-5xl capitalize">About the Podcast</h1>
+                    <div class="podcast__content mt-4 pb-20">
+                        <p class=" light__wate font-normal text-base">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.</p>
+                        <p class="light__wate font-normal text-base">We break down complex topics into digestible insights, explore productivity strategies that actually work,<p>
+                        <p class=" light__wate font-normal text-base">and share stories of personal growth from industry leaders.</p>
+                        <p class="light__wate font-normal text-base mt-7 ">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+                    </div>
+                </center>
+                <div class="prodcast__cards pt-20 grid grid-cols-4 gap-20 pb-28">
+                    <div class="prodcast__card text-center">
+                        <h1 class="bright font-black text-5xl">150K+</h1>
+                        <p class="light__wate uppercase font-normal text-base mt-4">Monthly Listeners</p>
+                    </div>
+                    <div class="prodcast__card text-center">
+                        <h1 class="bright font-black text-5xl">200+</h1>
+                        <p class="light__wate uppercase font-normal text-base mt-4">Episodes Published</p>
+                    </div>
+                    <div class="prodcast__card text-center">
+                        <h1 class="bright font-black text-5xl">4.9★</h1>
+                        <p class="light__wate uppercase font-normal text-base mt-4">Average Rating</p>
+                    </div>
+                    <div class="prodcast__card text-center">
+                        <h1 class="bright font-black text-5xl">50+</h1>
+                        <p class="light__wate uppercase font-normal text-base mt-4">Industry Experts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

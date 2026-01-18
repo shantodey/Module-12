@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
-    margin: 0;
-    padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -15,12 +13,16 @@ img {
 body{
     background-color: #FBFBFB;
 }
-.container{
-    margin: 0 auto;
-    width: 1200px;
+
+
+
+/* common css */
+.light__wate{
+    color: rgb(209, 207, 216);
 }
-
-
+.bright{
+    color: rgb(0, 255, 136);
+}
 /* herder section styling */
 header{
     background-color: rgba(26, 11, 46, 1);
@@ -29,10 +31,7 @@ nav{
     padding: 30px 0;
     border-bottom: 1px solid rgba(65, 37, 103, 1);
 }
-#logo{
-    font-size: 1.5rem;
-    font-weight: 700;
-}
+
 #logo .nav__logo{
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     -webkit-background-clip: text;
@@ -44,6 +43,7 @@ nav{
 nav ul{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 nav .nav__item{
     display: flex;
@@ -95,9 +95,7 @@ nav .nav__item a{
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
     background-color: rgba(0, 255, 136, 1);
 }
-.hero__paragraph{
-    color: rgb(209, 207, 216);
-}
+
 .hero__button{
     display: flex;
     justify-content: center;
@@ -110,4 +108,17 @@ nav .nav__item a{
     color: rgb(0, 255, 136);
     border-radius:50px;
     background: transparent;
+}
+
+
+
+
+
+
+
+#podcast{
+    background-color: rgba(26, 11, 46, 1);
+}
+.podcast__content{
+     border-bottom: 1px solid rgba(65, 37, 103, 1);
 }
