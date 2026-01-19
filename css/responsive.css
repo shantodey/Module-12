@@ -2,6 +2,9 @@
     .nav__button{
         font-size: 14px;
     }
+    #hero{
+        background: url(../assets/hero-bg-responsive.png)  no-repeat center / cover;
+    }
     .hero__img__container{
         height: 200px;
         width: 200px;
@@ -19,5 +22,9 @@
     }
     .host__social__midea {
         justify-content: center;
+    }
+    footer{
+        background: url(../assets/footer-bg-responsive.jpg)  no-repeat center / cover;
+
     }
 }
