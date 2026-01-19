@@ -10,40 +10,41 @@
     <title>TechWave</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="bg-[rgba(26,11,46,1)]">
+        <nav class="lg:py-[30px] py-5 border-b border-[rgba(65,37,103,1)]">
             <div class="container mx-auto px-4 max-w-[1200px]">
                 <ul class="flex justify-between items-center flex-wrap md:flex-nowrap gap-4">
                     <li><a href=""><h2 id="logo" class="text-4xl sm:text-6xl font-bold">Tech<span class="nav__logo text-4xl sm:text-6xl font-bold">Wave</span></h2></a></li>
-                    <li class="hidden md:block">
-                        <ul class="nav__item">
-                            <li><a href="#why__us">About</a></li>
-                            <li><a href="#featured__episodes">Episodes</a></li>
-                            <li><a href="">Host</a></li>
+                    <li class="hidden md:block sm:block">
+                        <ul class="nav__item flex gap-x-8">
+                            <li><a class="font-medium text-base" href="#why__us">About</a></li>
+                            <li><a class="font-medium text-base" href="#featured__episodes">Episodes</a></li>
+                            <li><a class="font-medium text-base" href="#host">Host</a></li>
                         </ul>
                     </li>
-                    <li><a href=""><button class="nav__button text-sm sm:text-base px-3 sm:px-4">Subscribe <i class="fa-solid fa-arrow-right-long"></i></button></a></li>
+                    <li class="hidden md:block sm:block"><a href=""><button class="nav__button text-sm sm:text-base px-3 sm:px-4">Subscribe <i class="fa-solid fa-arrow-right-long"></i></button></a></li>
+                    <span class="block lg:hidden sm:hidden xl:hidden hover:cursor-pointer"><i class="fa-solid fa-bars text-2xl"></i></span>
                 </ul>
             </div>
         </nav>
         <!-- hero section -->
-        <section id="hero">
-            <div class="container mx-auto px-4 max-w-[1200px]">
-                <div class="hero__container lg:py-[110px] py-10 mx-auto grid place-items-center">
-                    <div class="hero__img__container relative">
-                        <img class="hero__ing_1" src="assets/hero-circle.png" alt="big circle">
-                        <img class=" hero__ing_2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="assets/microphone.png" alt="microphone">
-                        <div class="hero__img__overlay absolute top-7 right-0 transform -translate-x-1/2 -translate-y-1/2"><button class="uppercase">New</button></div>
-                    </div>
-                    <h1 class="hero__titel font-extrabold text-4xl sm:text-6xl mt-10 text-center px-4">TechWave</h1>
-                    <p class="light__wate font-normal text-sm lx:text-base lg:text-base text-center py-6 text-[20px]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
-                    <div class="hero__button__groups flex  gap-3  w-full justify-center px-4 ">
-                        <button class="nav__button text-sm "><img src="assets/spotify.png" alt="spotify">Listen on Spotify</button>
-                        <button class="hero__button text-sm "><img src="assets/message.png" alt="message">Subscribe</button>
+            <section id="hero">
+                <div class="container mx-auto px-4 max-w-[1200px]">
+                    <div class="hero__container lg:py-[110px] py-10 mx-auto grid place-items-center">
+                        <div class="hero__img__container">
+                            <img class="hero__ing_1" src="assets/hero-circle.png" alt="big circle">
+                            <img class=" hero__ing_2" src="assets/microphone.png" alt="microphone">
+                            <div class="hero__img__overlay"><button class="uppercase">New</button></div>
+                        </div>
+                        <h1 class="hero__titel font-extrabold text-4xl sm:text-6xl mt-10 text-center px-4">TechWave</h1>
+                        <p class="light__wate font-normal text-sm lx:text-base lg:text-base text-center py-6 text-[20px]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                        <div class="hero__button__groups flex  gap-3  w-full justify-center px-4 ">
+                            <button class="nav__button text-sm "><img src="assets/spotify.png" alt="spotify">Listen on Spotify</button>
+                            <button class="hero__button text-sm "><img src="assets/message.png" alt="message">Subscribe</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
         <!-- hero section end-->
     </header>
 
