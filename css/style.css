@@ -41,11 +41,7 @@ nav{
     color: transparent;
     display: inline-block;
 }
-nav ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 nav .nav__item{
     display: flex;
     column-gap: 32px;
@@ -121,7 +117,6 @@ nav .nav__item a{
 .podcast__content{
      border-bottom: 1px solid #412567;
 }
-
 
 
 

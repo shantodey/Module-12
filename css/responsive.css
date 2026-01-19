@@ -1,4 +1,7 @@
 @media screen and (max-width:576px) {
+    .nav__button{
+        font-size: 14px;
+    }
     .hero__img__container{
         height: 200px;
         width: 200px;
