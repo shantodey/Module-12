@@ -1,4 +1,9 @@
 @media screen and (max-width:576px) {
+    body,
+    html {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
     .nav__button{
         font-size: 14px;
     }
@@ -25,6 +30,6 @@
     }
     footer{
         background: url(../assets/footer-bg-responsive.jpg)  no-repeat center / cover;
-
+        
     }
 }
