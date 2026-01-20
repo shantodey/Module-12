@@ -32,4 +32,8 @@
         background: url(../assets/footer-bg-responsive.jpg)  no-repeat center / cover;
         
     }
+      .footer__section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
